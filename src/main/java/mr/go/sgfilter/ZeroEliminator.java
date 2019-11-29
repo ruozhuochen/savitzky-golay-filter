@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package com.rogerose.os.math.sgfilter;
+package mr.go.sgfilter;
 
 /**
  * Eliminates zeros from data - starting from the first non-zero element, ending

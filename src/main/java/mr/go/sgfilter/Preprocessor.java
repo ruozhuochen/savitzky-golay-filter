@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package com.rogerose.os.math.sgfilter;
+package mr.go.sgfilter;
 
 /**
  * This interface represents types which are able to perform data processing in

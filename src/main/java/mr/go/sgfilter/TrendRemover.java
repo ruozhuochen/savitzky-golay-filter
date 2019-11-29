@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package com.rogerose.os.math.sgfilter;
+package mr.go.sgfilter;
 
 /**
  * De-trends data by setting straight line between the first and the last point

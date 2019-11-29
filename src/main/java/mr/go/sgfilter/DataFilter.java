@@ -1,4 +1,4 @@
-package com.rogerose.os.math.sgfilter;
+package mr.go.sgfilter;
 
 /**
  * This interface represents types which are able to filter data, for example:

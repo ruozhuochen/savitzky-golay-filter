@@ -1,4 +1,4 @@
-package com.rogerose.os.math.sgfilter;
+package mr.go.sgfilter;
 
 import static java.lang.Math.pow;
 

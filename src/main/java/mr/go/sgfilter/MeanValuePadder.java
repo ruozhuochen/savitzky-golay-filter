@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package com.rogerose.os.math.sgfilter;
+package mr.go.sgfilter;
 
 /**
  * Pads data to left and/or right.:
