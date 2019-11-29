@@ -6,5 +6,5 @@ which originated from https://code.google.com/p/savitzky-golay-filter
 
 ## Modification 
 Modified with code from https://github.com/swallez/savitzky-golay-filter issues, which an user has provided a
-modified implementation based common-math3 instead of the outdated common-math. 
+modified implementation based on the common-math3. 
 
