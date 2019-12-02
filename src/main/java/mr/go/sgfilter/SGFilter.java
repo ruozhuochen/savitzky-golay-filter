@@ -301,22 +301,22 @@ public class SGFilter {
      * bias} essentially means
      * "how many points of pad should be left out when smoothing". Filters
      * taking this condition into consideration are passed in {@code coeffs}.
-     * <tt>coeffs[0]</tt> is used for unbiased data (that is, for
-     * <tt>data[bias]..data[data.length-bias-1]</tt>). Its length has to be
-     * <tt>nr + nl + 1</tt>. Filters from range
-     * <tt>coeffs[coeffs.length - 1]</tt> to
-     * <tt>coeffs[coeffs.length - bias]</tt> are used for smoothing first
-     * {@code bias} points (that is, from <tt>data[0]</tt> to
-     * <tt>data[bias]</tt>) correspondingly. Filters from range
-     * <tt>coeffs[1]</tt> to <tt>coeffs[bias]</tt> are used for smoothing last
+     * coeffs[0] is used for unbiased data (that is, for
+     * data[bias]..data[data.length-bias-1]). Its length has to be
+     * nr + nl + 1. Filters from range
+     * coeffs[coeffs.length - 1] to
+     * coeffs[coeffs.length - bias] are used for smoothing first
+     * {@code bias} points (that is, from data[0] to
+     * data[bias]) correspondingly. Filters from range
+     * coeffs[1] to coeffs[bias] are used for smoothing last
      * {@code bias} points (that is, for
-     * <tt>data[data.length-bias]..data[data.length-1]</tt>). For example, if
+     * data[data.length-bias]..data[data.length-1]). For example, if
      * you use 5 past points and 5 future points for smoothing, but have only 3
      * meaningful padding points - you would use {@code bias} equal to 2 and
      * would pass in {@code coeffs} param filters taking 5-5 points (for regular
      * smoothing), 5-4, 5-3 (for rightmost range of data) and 3-5, 4-5 (for
      * leftmost range). If you do not wish to use pads completely for
-     * symmetrical filter then you should pass <tt>bias = nl = nr</tt>
+     * symmetrical filter then you should pass bias = nl = nr
      *
      * @param data
      *            data for filter
@@ -330,9 +330,9 @@ public class SGFilter {
      *            array of filter coefficients
      * @return filtered data
      * @throws IllegalArgumentException
-     *             when <tt>bias < 0</tt> or <tt>bias > min(nr, nl)</tt>
+     *             when bias < 0 or bias > min(nr, nl)
      * @throws IndexOutOfBoundsException
-     *             when {@code coeffs} has less than <tt>2*bias + 1</tt>
+     *             when {@code coeffs} has less than 2*bias + 1
      *             elements
      * @throws NullPointerException
      *             when any array passed as parameter is null
@@ -424,9 +424,9 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if <tt>to > data.length</tt>
+     *             if to > data.length
      * @throws IllegalArgumentException
-     *             if <tt>from < 0</tt> or <tt>to > data.length</tt>
+     *             if from < 0 or to > data.length
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */
@@ -453,12 +453,12 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if <tt>to > data.length</tt> or when {@code coeffs} has less
-     *             than <tt>2*bias + 1</tt> elements
+     *             if to > data.length or when {@code coeffs} has less
+     *             than 2*bias + 1 elements
      * @throws IllegalArgumentException
-     *             if <tt>from < 0</tt> or <tt>to > data.length</tt> or
-     *             <tt>from > to</tt> or when <tt>bias < 0</tt> or
-     *             <tt>bias > min(nr, nl)</tt>
+     *             if from < 0 or to > data.length or
+     *             from > to or when bias < 0 or
+     *             bias > min(nr, nl)
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */
@@ -525,9 +525,9 @@ public class SGFilter {
      *            array of filter coefficients
      * @return filtered data
      * @throws IllegalArgumentException
-     *             when <tt>bias < 0</tt> or <tt>bias > min(nr, nl)</tt>
+     *             when bias < 0 or bias > min(nr, nl)
      * @throws IndexOutOfBoundsException
-     *             when {@code coeffs} has less than <tt>2*bias + 1</tt>
+     *             when {@code coeffs} has less than 2*bias + 1
      *             elements
      * @throws NullPointerException
      *             when any array passed as parameter is null
@@ -561,9 +561,9 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if <tt>to > data.length</tt>
+     *             if to > data.length
      * @throws IllegalArgumentException
-     *             if <tt>from < 0</tt> or <tt>to > data.length</tt>
+     *             if from < 0 or to > data.length
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */
@@ -588,12 +588,12 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if <tt>to > data.length</tt> or when {@code coeffs} has less
-     *             than <tt>2*bias + 1</tt> elements
+     *             if to > data.length or when {@code coeffs} has less
+     *             than 2*bias + 1 elements
      * @throws IllegalArgumentException
-     *             if <tt>from < 0</tt> or <tt>to > data.length</tt> or
-     *             <tt>from > to</tt> or when <tt>bias < 0</tt> or
-     *             <tt>bias > min(nr, nl)</tt>
+     *             if from < 0 or to > data.length or
+     *             from > to or when bias < 0 or
+     *             bias > min(nr, nl)
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */

@@ -30,10 +30,10 @@ package mr.go.sgfilter;
  * then for every element e which index is i such that:
  *
  *
- * 0 <= i < l, e is replaced with arithmetic mean of
+ * 0 &lt= i &lt l, e is replaced with arithmetic mean of
  * data[l]..data[l + window_length/2 - 1] (left padding)
  *
- * r < i < data.length, e is replaced with arithmetic mean of
+ * r &lt i &lt data.length, e is replaced with arithmetic mean of
  * data[r - window_length/2 + 1]..data[r] (right padding)
  *
  *
@@ -64,7 +64,7 @@ public class MeanValuePadder implements Preprocessor {
 	 *            Padding will use half of {@code windowLength} length. In this
 	 *            way padding will be suited to smoothing operation
 	 * @throws IllegalArgumentException
-	 *             if {@code windowLength} < 0
+	 *             if {@code windowLength} &lt 0
 	 */
 	public MeanValuePadder(int windowLength) {
 		if (windowLength < 0)
@@ -83,7 +83,7 @@ public class MeanValuePadder implements Preprocessor {
 	 * @param paddingRight
 	 *            enables or disables left padding
 	 * @throws IllegalArgumentException
-	 *             if {@code windowLength} < 0
+	 *             if {@code windowLength} &lt 0
 	 */
 	public MeanValuePadder(int windowLength, boolean paddingLeft,
 			boolean paddingRight) {
@@ -182,9 +182,9 @@ public class MeanValuePadder implements Preprocessor {
 
 	/**
 	 * 
-	 * @param windowLength
+	 * @param windowLength windowLength
 	 * @throws IllegalArgumentException
-	 *             if {@code windowLength} < 0
+	 *             if {@code windowLength} &lt 0
 	 */
 	public void setWindowLength(int windowLength) {
 		if (windowLength < 0)

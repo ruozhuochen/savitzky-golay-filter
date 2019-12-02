@@ -8,7 +8,7 @@ import static java.lang.Math.sqrt;
  * Filters data using Ramer-Douglas-Peucker algorithm with specified tolerance
  * 
  * @author Rzeźnik
- * @see http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm
+ * see http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm
  */
 public class RamerDouglasPeuckerFilter implements DataFilter {
 

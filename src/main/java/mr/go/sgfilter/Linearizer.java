@@ -24,14 +24,12 @@ import static java.lang.Math.abs;
  * lying on line between the first and the last of such points. Strictly:
  *
  * let delta(i) be function which assigns to an element at index
- * i (data[i]), for 0
- * <= i < data.length - 1, value of
+ * i (data[i]), for 0 &lt= i &lt data.length - 1, value of
  * |(data[i] - data[i+1])/data[i]|. Then for each range (j,k)
  * of data, such that
- * delta(j) > {@link #getTruncateRatio() truncateRatio} and
- * delta(k)
- * <= {@link #getTruncateRatio() truncateRatio}, data[x] = ((data[k] -
- * data[j])/(k - j)) * (x - k) + data[j]) for j <= x <= k.
+ * delta(j) &gt {@link #getTruncateRatio() truncateRatio} and
+ * delta(k) &lt= {@link #getTruncateRatio() truncateRatio}, data[x] = ((data[k] -
+ * data[j])/(k - j)) * (x - k) + data[j]) for j &lt= x &lt= k.
  *
  * 
  * @author Marcin Rzeźnicki
@@ -54,7 +52,7 @@ public class Linearizer implements Preprocessor {
 	 *            maximum relative difference of subsequent data points above
 	 *            which linearization begins
 	 * @throws IllegalArgumentException
-	 *             when {@code truncateRatio} < 0
+	 *             when {@code truncateRatio} &lt 0
 	 */
 	public Linearizer(float truncateRatio) {
 		if (truncateRatio < 0f)
@@ -118,7 +116,7 @@ public class Linearizer implements Preprocessor {
 	 *            maximum relative difference of subsequent data points above
 	 *            which linearization begins
 	 * @throws IllegalArgumentException
-	 *             when {@code truncateRatio} < 0
+	 *             when {@code truncateRatio} &lt 0
 	 */
 	public void setTruncateRatio(float truncateRatio) {
 		if (truncateRatio < 0f)

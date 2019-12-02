@@ -29,7 +29,7 @@ public interface Preprocessor {
 	 * Data processing method. Called on Preprocessor instance when its
 	 * processing is needed
 	 * 
-	 * @param data
+	 * @param data data
 	 */
 	void apply(double[] data);
 }
