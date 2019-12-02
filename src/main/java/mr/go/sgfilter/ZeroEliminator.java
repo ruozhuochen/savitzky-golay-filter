@@ -26,14 +26,14 @@ package mr.go.sgfilter;
  * let r be the index of the last non-zero element in data
  *
  * then for every element e which index is i such that:
- * l < i < r and e == 0, e is replaced with element e'
+ * l &lt i &lt r and e == 0, e is replaced with element e'
  * with index j such that:
  *
- * l <= j < i and e' <> 0 and for all indexes
- * k: j < k < i; e[k] == 0 - when {@link #isAlignToLeft() alignToLeft}
+ * l &lt= j &lt i and e' != 0 and for all indexes
+ * k: j &lt k &lt i; e[k] == 0 - when {@link #isAlignToLeft() alignToLeft}
  * is true
- * i < j <= r and e' <> 0 and for all indexes
- * k: i < k < j;e[k] == 0 - otherwise
+ * i &lt j &lt= r and e' != 0 and for all indexes
+ * k: i &lt k &lt j;e[k] == 0 - otherwise
  *
  *
  * Example:

@@ -330,7 +330,7 @@ public class SGFilter {
      *            array of filter coefficients
      * @return filtered data
      * @throws IllegalArgumentException
-     *             when bias < 0 or bias > min(nr, nl)
+     *             when bias &lt 0 or bias &gt min(nr, nl)
      * @throws IndexOutOfBoundsException
      *             when {@code coeffs} has less than 2*bias + 1
      *             elements
@@ -424,9 +424,9 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if to > data.length
+     *             if to &gt data.length
      * @throws IllegalArgumentException
-     *             if from < 0 or to > data.length
+     *             if from &lt 0 or to &gt data.length
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */
@@ -453,12 +453,12 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if to > data.length or when {@code coeffs} has less
+     *             if to &gt data.length or when {@code coeffs} has less
      *             than 2*bias + 1 elements
      * @throws IllegalArgumentException
-     *             if from < 0 or to > data.length or
-     *             from > to or when bias < 0 or
-     *             bias > min(nr, nl)
+     *             if from &lt 0 or to &gt data.length or
+     *             from &gt to or when bias &lt 0 or
+     *             bias &gt min(nr, nl)
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */
@@ -525,7 +525,7 @@ public class SGFilter {
      *            array of filter coefficients
      * @return filtered data
      * @throws IllegalArgumentException
-     *             when bias < 0 or bias > min(nr, nl)
+     *             when bias &lt 0 or bias &gt min(nr, nl)
      * @throws IndexOutOfBoundsException
      *             when {@code coeffs} has less than 2*bias + 1
      *             elements
@@ -561,9 +561,9 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if to > data.length
+     *             if to &gt data.length
      * @throws IllegalArgumentException
-     *             if from < 0 or to > data.length
+     *             if from &lt 0 or to &gt data.length
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */
@@ -588,12 +588,12 @@ public class SGFilter {
      *            filter coefficients
      * @return filtered data
      * @throws ArrayIndexOutOfBoundsException
-     *             if to > data.length or when {@code coeffs} has less
+     *             if to &gt data.length or when {@code coeffs} has less
      *             than 2*bias + 1 elements
      * @throws IllegalArgumentException
-     *             if from < 0 or to > data.length or
-     *             from > to or when bias < 0 or
-     *             bias > min(nr, nl)
+     *             if from &lt 0 or to &gt data.length or
+     *             from &gt to or when bias &lt 0 or
+     *             bias &gt min(nr, nl)
      * @throws NullPointerException
      *             if {@code data} is null or {@code coeffs} is null
      */
