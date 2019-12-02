@@ -10,8 +10,10 @@ modified implementation based on the common-math3.
 
 ## POM
 
+```
 <dependency>
   <groupId>io.github.ruozhuochen</groupId>
   <artifactId>savitzky-golay-filter</artifactId>
   <version>1.0.1</version>
 </dependency>
+```
