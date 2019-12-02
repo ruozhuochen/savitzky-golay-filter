@@ -30,10 +30,10 @@ package mr.go.sgfilter;
  * then for every element e which index is i such that:
  *
  *
- * 0 &lt= i &lt l, e is replaced with element data[l]
+ * 0 &lt;= i &lt; l, e is replaced with element data[l]
  * (left padding)
  *
- * r &lt i &lt data.length, e is replaced with element
+ * r &lt; i &lt; data.length, e is replaced with element
  * data[r] (right padding)
  *
  *
