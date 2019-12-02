@@ -4,7 +4,7 @@
 
     <groupId>io.github.ruozhuochen</groupId>
     <artifactId>savitzky-golay-filter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -54,7 +54,7 @@
         <url>https://github.com/ruozhuochen/savitzky-golay-filter</url>
         <connection>scm:git:git://github.com/ruozhuochen/savitzky-golay-filter.git</connection>
         <developerConnection>scm:git:git@github.com:ruozhuochen/savitzky-golay-filter.git</developerConnection>
-        <tag>savitzky-golay-filter-1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
