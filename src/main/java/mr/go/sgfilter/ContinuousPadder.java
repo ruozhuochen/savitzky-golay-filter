@@ -19,31 +19,31 @@ package mr.go.sgfilter;
 /**
  * Pads data to left and/or right, starting from the first (last) non-zero cell
  * and extending it to the beginning (end) of data. More specifically:
- * <p>
- * <ul>
- * <li>
- * Let <tt>l</tt> be the index of the first non-zero element in data (for left
- * padding),</li>
- * <li>let <tt>r</tt> be the index of the last non-zero element in data (for
- * right padding)</li>
- * </ul>
- * then for every element <tt>e</tt> which index is <tt>i</tt> such that:
- * <ul>
- * <li>
- * <tt>0 <= i < l</tt>, <tt>e</tt> is replaced with element <tt>data[l]</tt>
- * (left padding)</li>
- * <li>
- * <tt>r < i < data.length</tt>, <tt>e</tt> is replaced with element
- * <tt>data[r]</tt> (right padding)</li>
- * </ul>
- * </p>
+ *
+ *
+ *
+ * Let l be the index of the first non-zero element in data (for left
+ * padding),
+ * let r be the index of the last non-zero element in data (for
+ * right padding)
+ *
+ * then for every element e which index is i such that:
+ *
+ *
+ * 0 <= i < l, e is replaced with element data[l]
+ * (left padding)
+ *
+ * r < i < data.length, e is replaced with element
+ * data[r] (right padding)
+ *
+ *
  * Example:
- * <p>
- * Given data: <tt>[0,0,0,1,2,1,3,1,2,4,0]</tt> result of applying
- * ContinuousPadder is: <tt>[1,1,1,1,2,1,3,1,2,4,0]</tt> in case of
- * {@link #isPaddingLeft() left padding}; <tt>[0,0,0,1,2,1,3,1,2,4,4]</tt> in
+ *
+ * Given data: [0,0,0,1,2,1,3,1,2,4,0] result of applying
+ * ContinuousPadder is: [1,1,1,1,2,1,3,1,2,4,0] in case of
+ * {@link #isPaddingLeft() left padding}; [0,0,0,1,2,1,3,1,2,4,4] in
  * case of {@link #isPaddingRight() right padding};
- * </p>
+ *
  * 
  * @author Marcin Rzeźnicki
  * 
