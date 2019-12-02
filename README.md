@@ -8,3 +8,10 @@ which originated from https://code.google.com/p/savitzky-golay-filter
 Modified with code from https://github.com/swallez/savitzky-golay-filter issues, which an user has provided a
 modified implementation based on the common-math3. 
 
+## POM
+
+<dependency>
+  <groupId>io.github.ruozhuochen</groupId>
+  <artifactId>savitzky-golay-filter</artifactId>
+  <version>1.0.1</version>
+</dependency>
