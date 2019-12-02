@@ -22,17 +22,17 @@ import static java.lang.Math.abs;
  * Linearizes data by seeking points with relative difference greater than
  * {@link #getTruncateRatio() truncateRatio} and replacing them with points
  * lying on line between the first and the last of such points. Strictly:
- * <p>
- * let <tt>delta(i)</tt> be function which assigns to an element at index
- * <tt>i (data[i])</tt>, for <tt>0
- * <= i < data.length - 1</tt>, value of
- * <tt>|(data[i] - data[i+1])/data[i]|</tt>. Then for each range <tt>(j,k)</tt>
+ *
+ * let delta(i) be function which assigns to an element at index
+ * i (data[i]), for 0
+ * <= i < data.length - 1, value of
+ * |(data[i] - data[i+1])/data[i]|. Then for each range (j,k)
  * of data, such that
- * <tt>delta(j) > {@link #getTruncateRatio() truncateRatio}</tt> and
- * <tt>delta(k)
- * <= {@link #getTruncateRatio() truncateRatio}</tt>, <tt>data[x] = ((data[k] -
- * data[j])/(k - j)) * (x - k) + data[j])</tt> for <tt>j <= x <= k</tt>.
- * </p>
+ * delta(j) > {@link #getTruncateRatio() truncateRatio} and
+ * delta(k)
+ * <= {@link #getTruncateRatio() truncateRatio}, data[x] = ((data[k] -
+ * data[j])/(k - j)) * (x - k) + data[j]) for j <= x <= k.
+ *
  * 
  * @author Marcin Rzeźnicki
  * 

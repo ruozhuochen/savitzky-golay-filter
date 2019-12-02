@@ -19,30 +19,30 @@ package mr.go.sgfilter;
 /**
  * Eliminates zeros from data - starting from the first non-zero element, ending
  * at the last non-zero element. More specifically:
- * <p>
- * <ul>
- * <li>
- * Let <tt>l</tt> be the index of the first non-zero element in data,</li>
- * <li>let <tt>r</tt> be the index of the last non-zero element in data</li>
- * </ul>
- * then for every element <tt>e</tt> which index is <tt>i</tt> such that:
- * <tt>l < i < r</tt> and <tt>e == 0</tt>, <tt>e</tt> is replaced with element <tt>e'</tt>
- * with index <tt>j</tt> such that:
- * <ul>
- * <li><tt>l <= j < i</tt> and <tt>e' <> 0</tt> and for all indexes
- * <tt>k: j < k < i; e[k] == 0</tt> - when {@link #isAlignToLeft() alignToLeft}
- * is true</li>
- * <li><tt>i < j <= r</tt> and <tt>e' <> 0</tt> and for all indexes
- * <tt>k: i < k < j;e[k] == 0</tt> - otherwise</li>
- * </ul>
- * </p>
+ *
+ *
+ *
+ * Let l be the index of the first non-zero element in data,
+ * let r be the index of the last non-zero element in data
+ *
+ * then for every element e which index is i such that:
+ * l < i < r and e == 0, e is replaced with element e'
+ * with index j such that:
+ *
+ * l <= j < i and e' <> 0 and for all indexes
+ * k: j < k < i; e[k] == 0 - when {@link #isAlignToLeft() alignToLeft}
+ * is true
+ * i < j <= r and e' <> 0 and for all indexes
+ * k: i < k < j;e[k] == 0 - otherwise
+ *
+ *
  * Example:
- * <p>
- * Given data: <tt>[0,0,0,1,2,0,3,0,0,4,0]</tt> result of applying
- * ZeroEliminator is: <tt>[0,0,0,1,2,2,3,3,3,4,0]</tt> if
+ *
+ * Given data: [0,0,0,1,2,0,3,0,0,4,0] result of applying
+ * ZeroEliminator is: [0,0,0,1,2,2,3,3,3,4,0] if
  * {@link #isAlignToLeft() alignToLeft} is true;
- * <tt>[0,0,0,1,2,3,3,4,4,4,0]</tt> - otherwise
- * </p>
+ * [0,0,0,1,2,3,3,4,4,4,0] - otherwise
+ *
  * 
  * @author Marcin Rzeźnicki
  * 
